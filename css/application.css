@@ -1,0 +1,342 @@
+/*
+  ========================================
+  Global Imports
+  ========================================
+*/
+/*
+  ========================================
+  Base imports
+  ========================================
+*/
+/*
+  ========================================
+  Global Layout Settings
+  ========================================
+*/
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif; }
+
+/**************************** 
+Clear float   
+*****************************/
+.clear-fix {
+  clear: both;
+  display: table;
+  content: ""; }
+
+/*
+  ========================================
+  Layout imports
+  ========================================
+*/
+/******************************* 
+Navigational and Header Settings 
+********************************/
+.main-header,
+.main-footer-mobile,
+.main-footer-desktop {
+  background: lightgray; }
+
+.main-header {
+  padding-top: 40px; }
+
+.container-heading {
+  padding-bottom: 20px; }
+
+.navigation ul {
+  list-style-type: none;
+  text-transform: uppercase;
+  text-align: center;
+  width: 80%; }
+
+.navigation li,
+.navigation a {
+  background: white; }
+
+.navigation li {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 5px; }
+
+a:hover {
+  cursor: pointer; }
+
+.header-info img {
+  width: 55%;
+  margin-top: 20px;
+  margin-bottom: 25px; }
+
+.header-info p {
+  width: 85%;
+  padding-bottom: 20px;
+  font-family: 'Lato', Georgia,  Helvetica, Verdana, Arial, sans-serif;
+  font-size: 1.2em; }
+
+/****************************************** 
+Remove the default text decoration settings 
+********************************************/
+.navigation a,
+.footer-navigation {
+  text-decoration: none;
+  color: black; }
+
+.navigation a {
+  font-weight: 500;
+  font-size: 1.5em; }
+
+/**************************** 
+Portfolio Layout for Mobile 
+*****************************/
+#portfolio h2,
+#portfolio div,
+#portfolio p {
+  background-color: white; }
+
+#portfolio {
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+#portfolio h2 {
+  padding-bottom: 20px; }
+
+.figures img,
+.figures p {
+  width: 80%;
+  padding: 10px 20px; }
+
+.figures p {
+  margin: auto auto 20px auto; }
+
+.figures figcaption {
+  font-weight: bold; }
+
+/**************************** 
+Contact Layout  
+*****************************/
+#contact {
+  width: 100%;
+  background: #ffe0cc; }
+
+#contact h2 {
+  padding-top: 50px; }
+
+#contact p {
+  padding: 15px; }
+
+#contact p:nth-child(4) {
+  padding: 15px 15px 40px 15px; }
+
+/**************************** 
+Contact Layout  
+*****************************/
+#skills, #skills li {
+  margin: 20px auto; }
+
+#skills li {
+  color: green;
+  list-style: none; }
+
+#skills li:hover {
+  /*   text-decoration: underline;*/
+  font-size: 1.2em; }
+
+/**************************** 
+Footer Layout for mobile
+*****************************/
+.main-footer-desktop {
+  display: none;
+  /** Make desktop footer disappear for mobile devices **/ }
+
+#control-footer-background-color {
+  background: lightgray; }
+
+.main-footer-mobile {
+  width: 90%;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-top: 1px solid darkgray; }
+
+.main-footer-mobile div {
+  width: 50%;
+  float: left; }
+
+.main-footer-mobile h2 {
+  float: left;
+  text-align: left;
+  font-size: 0.7em; }
+
+.main-footer-mobile a {
+  /*    padding-right: 15px;*/
+  font-size: 0.7em; }
+
+.main-footer-mobile a,
+.main-footer-desktop a {
+  text-decoration: none;
+  color: black;
+  float: right; }
+
+/*
+  ========================================
+  Settings for Mobile
+  ========================================
+*/
+/*
+  ========================================
+  Settings for Tablet
+  ========================================
+*/
+/******************************* 
+Navigational and Header Settings 
+********************************/
+@media (min-width: 768px) {
+  .main-header {
+    margin-bottom: 40px; }
+
+  .navigation li,
+  .navigation a {
+    background: lightgray;
+    margin: 0 auto 30px auto; }
+
+  .main-header li {
+    display: inline-block;
+    padding-left: 20px; }
+
+  .header-info div {
+    width: 50%;
+    float: right; }
+
+  .header-info div p {
+    text-align: left; }
+
+  .header-info p {
+    padding-top: 10px; }
+
+  .header-info img {
+    width: 85%;
+    padding-right: 25px; }
+
+  /**************************** 
+  Portfolio Layout for Tablet 
+  *****************************/
+  #portfolio {
+    width: 90%;
+    margin: 0 auto 20px auto; }
+
+  .figures img,
+  .figures p {
+    width: 100%;
+    /*      margin: 0 auto;*/
+    /*      padding: 10px 20px 10px 0px;*/ }
+
+  .figures {
+    margin: 10px auto;
+    width: 50%;
+    float: left; }
+
+  .figures p {
+    padding: 0;
+    width: 80%; }
+
+  /**************************** 
+  Contact Layout for Tablet 
+  *****************************/
+  #contact p {
+    margin: 20px auto;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 20%;
+    padding-right: 20%;
+    text-align: center; }
+
+  /**************************** 
+  Footer Layout for Tablet 
+  *****************************/
+  /****** Make desktop footer visible 
+  ******* and mobile footer disappear***/
+  .main-footer-mobile {
+    display: none; }
+
+  #control-footer-background-color {
+    background: gray;
+    margin-left: 15px;
+    margin-right: 15px; }
+
+  .main-footer-desktop {
+    display: block;
+    font-size: 0.7em; }
+
+  .footer-container div {
+    width: 50%;
+    float: left;
+    padding-top: 15px;
+    padding-bottom: 40px;
+    border-top: 1px solid darkgray; }
+
+  .footer-heading h2 {
+    text-align: left;
+    /*        padding-left: 10px;*/ }
+
+  .footer-navigation li {
+    display: inline-block;
+    list-style-type: none; }
+
+  .footer-navigation ul,
+  .footer-navigation l,
+  .footer-navigation a {
+    text-align: right;
+    text-transform: uppercase;
+    padding-left: 20px; } }
+/*
+  ========================================
+  Settings for Desktop
+  ========================================
+*/
+@media (min-width: 1024px) {
+  header,
+  main,
+  footer {
+    max-width: 1200px; }
+
+  /*Settings for top section of the page */
+  .container-heading,
+  .container-navigation {
+    width: 50%;
+    float: left; }
+
+  .container-heading h2 {
+    text-align: left;
+    padding-left: 60px; }
+
+  .container-navigation li {
+    /*            float: right;*/
+    display: inline;
+    padding: 0; }
+
+  .container-navigation ul,
+  .container-navigation l,
+  .container-navigation a {
+    text-align: right;
+    padding-right: 15px;
+    font-size: 1em;
+    font-weight: bold; }
+
+  /*******Settings for header information of the page**********/
+  .header-info {
+    padding-top: 40px; }
+
+  .header-info p {
+    font-size: 1.1em;
+    font-family: 'Nunito', sans-serif; }
+
+  .header-info img {
+    width: 85%; }
+
+  /*Settings for Portfolio section of the page */
+  .figures {
+    width: 33%; } }
+
+/*# sourceMappingURL=application.css.map */

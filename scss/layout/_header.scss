@@ -1,0 +1,67 @@
+
+/******************************* 
+Navigational and Header Settings 
+********************************/
+
+.main-header,
+.main-footer-mobile,
+.main-footer-desktop
+ {
+    background: lightgray;
+}
+
+.main-header {
+    padding-top: 40px;
+}
+.container-heading {
+    padding-bottom: 20px;
+}
+
+.navigation ul {
+    list-style-type: none;
+    text-transform: uppercase;
+    text-align: center;
+    width: 80%
+}
+
+.navigation li,
+.navigation a {
+    background: white;
+}
+
+.navigation li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 5px;
+}
+
+ a:hover {
+    cursor: pointer;
+}
+
+.header-info img {
+    width: 55%;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+.header-info p {
+    width: 85%;   
+    padding-bottom: 20px;
+    font-family: 'Lato', Georgia,  Helvetica, Verdana, Arial, sans-serif;
+    font-size: 1.2em;
+}
+
+/****************************************** 
+Remove the default text decoration settings 
+********************************************/
+.navigation a,
+.footer-navigation{
+    text-decoration: none;
+    color: black;    
+}
+
+.navigation a {  
+    font-weight: 500;
+    font-size: 1.5em;
+}

@@ -1,0 +1,219 @@
+
+/*
+  ========================================
+  Global Imports
+  ========================================
+*/
+
+ @import 'base/index';
+ @import 'layout/index';
+
+
+
+/*
+  ========================================
+  Settings for Mobile
+  ========================================
+*/
+
+
+
+
+/*
+  ========================================
+  Settings for Tablet
+  ========================================
+*/
+
+/******************************* 
+Navigational and Header Settings 
+********************************/
+
+@media (min-width: 768px) {
+    .main-header {
+        margin-bottom: 40px;
+    }    
+
+    .navigation li,
+    .navigation a {
+        background: lightgray;
+        margin: 0 auto 30px auto;
+    }
+    
+    .main-header li {
+        display: inline-block;
+        padding-left: 20px;
+    }
+    
+      .header-info div {
+        width: 50%;
+        float: right;
+    }
+    
+    .header-info div p {  
+        text-align: left;
+    }
+
+    .header-info p {
+        padding-top: 10px;
+    }
+    
+    .header-info img {
+        width: 85%;
+        padding-right: 25px;
+    }
+    
+/**************************** 
+Portfolio Layout for Tablet 
+*****************************/
+     
+    #portfolio {
+        width: 90%;
+        margin: 0 auto 20px auto;
+    }
+    
+    .figures img,
+    .figures p {
+      width: 100%;
+/*      margin: 0 auto;*/
+/*      padding: 10px 20px 10px 0px;*/
+        
+    }
+    
+    .figures {
+        margin: 10px auto;
+        width: 50%;
+        float: left;
+    }
+  
+    .figures p {
+        padding: 0;
+        width: 80%;
+    }
+
+/**************************** 
+Contact Layout for Tablet 
+*****************************/
+    #contact p {
+    margin: 20px auto;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 20%;
+    padding-right: 20%;
+    text-align: center;
+}
+
+/**************************** 
+Footer Layout for Tablet 
+*****************************/
+/****** Make desktop footer visible 
+******* and mobile footer disappear***/
+    
+    .main-footer-mobile {
+        display: none;
+    }   
+    
+    #control-footer-background-color {
+     background: gray;
+     margin-left: 15px;
+     margin-right: 15px;
+}
+  
+     .main-footer-desktop{
+         display: block;
+         font-size: 0.7em;
+    }
+    
+
+    .footer-container div {
+        width: 50%;
+        float: left;       
+        padding-top: 15px;
+        padding-bottom: 40px;
+        border-top: 1px solid darkgray;  
+    }
+    
+    .footer-heading h2{
+        text-align: left;
+/*        padding-left: 10px;*/
+
+    }
+    
+    .footer-navigation li {
+        display: inline-block;       
+        list-style-type: none;       
+    }
+    
+      .footer-navigation ul, 
+        .footer-navigation l, 
+        .footer-navigation a{
+            text-align: right;
+            text-transform: uppercase;         
+            padding-left: 20px;
+           
+        }  
+
+}
+
+/*
+  ========================================
+  Settings for Desktop
+  ========================================
+*/
+   
+    @media (min-width: 1024px) {
+        header,
+        main,
+        footer {
+            max-width: 1200px;
+        }
+        
+        
+      /*Settings for top section of the page */
+        
+        .container-heading, 
+        .container-navigation {
+            width: 50%;
+            float: left;
+        }
+        
+        .container-heading h2 {
+           text-align: left;
+           padding-left: 60px;
+        }
+        
+        .container-navigation li {
+/*            float: right;*/
+            display: inline;            
+            padding: 0;
+        }
+        
+        .container-navigation ul, 
+        .container-navigation l, 
+        .container-navigation a{
+            text-align: right;
+            padding-right: 15px;
+            font-size: 1em;
+            font-weight: bold;
+        }
+      
+        
+         /*******Settings for header information of the page**********/
+        .header-info{
+            padding-top: 40px;
+        }
+        
+         .header-info p{
+            font-size: 1.1em;
+            font-family: 'Nunito', sans-serif;         
+        }
+        .header-info img {
+            width: 85%;
+        }
+        /*Settings for Portfolio section of the page */
+        
+        .figures {
+            width: 33%;
+        }   
+     
+    }

@@ -1,0 +1,41 @@
+/**************************** 
+Footer Layout for mobile
+*****************************/
+
+.main-footer-desktop {
+    display: none;   /** Make desktop footer disappear for mobile devices **/
+}
+
+#control-footer-background-color {
+     background: lightgray;
+}
+
+.main-footer-mobile {
+    width: 90%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-top: 1px solid darkgray;
+}
+
+.main-footer-mobile div{
+   width: 50%;
+   float: left;
+}
+
+.main-footer-mobile h2 {
+    float: left;    
+    text-align: left;
+    font-size: 0.7em;
+}
+
+.main-footer-mobile a{
+/*    padding-right: 15px;*/
+    font-size: 0.7em;
+}
+
+.main-footer-mobile a,
+.main-footer-desktop a{
+    text-decoration: none;
+    color: black;
+    float: right;
+}

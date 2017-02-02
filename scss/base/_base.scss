@@ -1,0 +1,23 @@
+/*
+  ========================================
+  Global Layout Settings
+  ========================================
+*/
+
+
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;    
+}
+
+/**************************** 
+Clear float   
+*****************************/
+.clear-fix {
+    clear: both;
+    display: table;
+    content: "";
+}
