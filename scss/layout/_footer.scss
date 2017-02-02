@@ -3,6 +3,8 @@ Footer Layout for mobile
 *****************************/
 
 .main-footer-desktop {
+     @extend %backgroundForHeaderAndFooter;
+     @extend %decoration;
     display: none;   /** Make desktop footer disappear for mobile devices **/
 }
 
@@ -11,6 +13,7 @@ Footer Layout for mobile
 }
 
 .main-footer-mobile {
+    @extend %backgroundForHeaderAndFooter;
     width: 90%;
     padding-top: 25px;
     padding-bottom: 25px;
@@ -29,7 +32,7 @@ Footer Layout for mobile
 }
 
 .main-footer-mobile a{
-/*    padding-right: 15px;*/
+    @extend %decoration;
     font-size: 0.7em;
 }
 
@@ -38,4 +41,9 @@ Footer Layout for mobile
     text-decoration: none;
     color: black;
     float: right;
+}
+
+.footer-navigation{   
+    @extend %linkColor; 
+    @extend %decoration; 
 }

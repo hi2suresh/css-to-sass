@@ -2,20 +2,18 @@
 /**************************** 
 Portfolio Layout for Mobile 
 *****************************/
-#portfolio h2,
-#portfolio div,
-#portfolio p {
-    background-color: white;
-}
 
 #portfolio {
+    background-color: white;
     margin-top: 20px;
     margin-bottom: 20px;
+
+    h2 {
+    padding-bottom: 20px;
+    }
 }
 
-#portfolio h2 {
-    padding-bottom: 20px;
-}
+
 
 .figures img,
 .figures p {
@@ -37,7 +35,7 @@ Contact Layout
 
 #contact {   
     width: 100%;
-    background: #ffe0cc 
+    background: #ffe0cc;
 }
 
 #contact h2 { 
