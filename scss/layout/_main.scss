@@ -1,69 +1,74 @@
 
-/**************************** 
-Portfolio Layout for Mobile 
-*****************************/
+    /**************************** 
+    Portfolio Layout for Mobile 
+    *****************************/
 
-#portfolio {
-    background-color: white;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    #portfolio {
+        @extend %whiteBackground;
+        margin-top: 20px;
+        margin-bottom: 20px;
 
-    h2 {
-    padding-bottom: 20px;
+        h2 {
+        padding-bottom: 20px;
+        }
     }
-}
 
 
 
-.figures img,
-.figures p {
-    width: 80%;
-    padding: 10px 20px;
-}
+    .figures img,
+    .figures p {
+        width: 80%;
+        padding: 10px 20px;
+    }
 
-.figures p {
-    margin: auto auto 20px auto;
-}
+    .figures {
+    p {
+        margin: auto auto 20px auto;
+    }
 
-.figures figcaption {
-    font-weight: bold;
-}
+     figcaption {
+        font-weight: bold;
+    }
+    }
 
-/**************************** 
-Contact Layout  
-*****************************/
+    /**************************** 
+    Contact Layout  
+    *****************************/
 
-#contact {   
-    width: 100%;
-    background: #ffe0cc;
-}
+    #contact {   
+        width: 100%;
+        background: #ffe0cc;
 
-#contact h2 { 
-    padding-top: 50px;
-}
+        h2 { 
+        padding-top: 50px;
+        }
 
-#contact p { 
-    padding: 15px;
-}
+        p { 
+        padding: 15px;
+        }
 
-#contact p:nth-child(4) { 
-    padding: 15px 15px 40px 15px;
-}
+    }
 
 
-/**************************** 
-Contact Layout  
-*****************************/
-#skills, #skills li {
-    margin: 20px auto;
-}
+    #contact p:nth-child(4) { 
+        padding: 15px 15px 40px 15px;
+    }
 
-#skills li {
-    color: green;   
-    list-style: none;    
-}
 
-#skills li:hover {
-/*   text-decoration: underline;*/
-   font-size: 1.2em;
-}
+    /**************************** 
+    Skills Layout  
+    *****************************/
+    #skills {
+     margin: 20px auto;
+        li {
+            margin: 20px auto;
+            color: green;   
+             list-style: none; 
+
+            &:hover {
+                font-size: 1.2em;
+             }
+        }
+    }
+
+

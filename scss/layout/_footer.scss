@@ -9,7 +9,7 @@ Footer Layout for mobile
 }
 
 #control-footer-background-color {
-     background: lightgray;
+     @extend %backgroundForHeaderAndFooter;
 }
 
 .main-footer-mobile {
@@ -20,21 +20,25 @@ Footer Layout for mobile
     border-top: 1px solid darkgray;
 }
 
-.main-footer-mobile div{
+.main-footer-mobile { 
+div{
    width: 50%;
    float: left;
 }
 
-.main-footer-mobile h2 {
+ h2 {
     float: left;    
     text-align: left;
     font-size: 0.7em;
 }
 
-.main-footer-mobile a{
+a{
     @extend %decoration;
     font-size: 0.7em;
 }
+
+}
+
 
 .main-footer-mobile a,
 .main-footer-desktop a{

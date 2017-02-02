@@ -12,19 +12,31 @@ Navigational and Header Settings
     padding-bottom: 20px;
 }
 
-.navigation ul {
+.navigation { 
+ ul {
     list-style-type: none;
     text-transform: uppercase;
     text-align: center;
     width: 80%
 }
 
-
-.navigation li {   
+li {    
+     @extend %whiteBackground;
     padding-top: 10px;
     padding-bottom: 10px;
     margin-bottom: 5px;
 }
+a { 
+    @extend %linkColor;
+    @extend %decoration;
+    @extend %whiteBackground;
+    font-weight: 500;
+    font-size: 1.5em;
+}
+
+}
+
+
 
  
 .header-info  {
@@ -44,14 +56,5 @@ Navigational and Header Settings
 }
 
 
-/****************************************** 
-Remove the default text decoration settings 
-********************************************/
 
 
-.navigation a { 
-    @extend %linkColor;
-    @extend %decoration;
-    font-weight: 500;
-    font-size: 1.5em;
-}

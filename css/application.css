@@ -50,11 +50,13 @@ Navigational and Header Settings
   text-transform: uppercase;
   text-align: center;
   width: 80%; }
-
 .navigation li {
   padding-top: 10px;
   padding-bottom: 10px;
   margin-bottom: 5px; }
+.navigation a {
+  font-weight: 500;
+  font-size: 1.5em; }
 
 .header-info img {
   width: 55%;
@@ -66,18 +68,10 @@ Navigational and Header Settings
   font-family: 'Lato', Georgia,  Helvetica, Verdana, Arial, sans-serif;
   font-size: 1.2em; }
 
-/****************************************** 
-Remove the default text decoration settings 
-********************************************/
-.navigation a {
-  font-weight: 500;
-  font-size: 1.5em; }
-
 /**************************** 
 Portfolio Layout for Mobile 
 *****************************/
 #portfolio {
-  background-color: white;
   margin-top: 20px;
   margin-bottom: 20px; }
   #portfolio h2 {
@@ -90,7 +84,6 @@ Portfolio Layout for Mobile
 
 .figures p {
   margin: auto auto 20px auto; }
-
 .figures figcaption {
   font-weight: bold; }
 
@@ -100,29 +93,25 @@ Contact Layout
 #contact {
   width: 100%;
   background: #ffe0cc; }
-
-#contact h2 {
-  padding-top: 50px; }
-
-#contact p {
-  padding: 15px; }
+  #contact h2 {
+    padding-top: 50px; }
+  #contact p {
+    padding: 15px; }
 
 #contact p:nth-child(4) {
   padding: 15px 15px 40px 15px; }
 
 /**************************** 
-Contact Layout  
+Skills Layout  
 *****************************/
-#skills, #skills li {
+#skills {
   margin: 20px auto; }
-
-#skills li {
-  color: green;
-  list-style: none; }
-
-#skills li:hover {
-  /*   text-decoration: underline;*/
-  font-size: 1.2em; }
+  #skills li {
+    margin: 20px auto;
+    color: green;
+    list-style: none; }
+    #skills li:hover {
+      font-size: 1.2em; }
 
 /**************************** 
 Footer Layout for mobile
@@ -130,9 +119,6 @@ Footer Layout for mobile
 .main-footer-desktop {
   display: none;
   /** Make desktop footer disappear for mobile devices **/ }
-
-#control-footer-background-color {
-  background: lightgray; }
 
 .main-footer-mobile {
   width: 90%;
@@ -143,12 +129,10 @@ Footer Layout for mobile
 .main-footer-mobile div {
   width: 50%;
   float: left; }
-
 .main-footer-mobile h2 {
   float: left;
   text-align: left;
   font-size: 0.7em; }
-
 .main-footer-mobile a {
   font-size: 0.7em; }
 
@@ -158,8 +142,11 @@ Footer Layout for mobile
   color: black;
   float: right; }
 
-.main-header, .main-footer-desktop, .main-footer-mobile {
+.main-header, .main-footer-desktop, #control-footer-background-color, .main-footer-mobile {
   background: lightgray; }
+
+.navigation li, .navigation a, #portfolio {
+  background: white; }
 
 .navigation a, .footer-navigation {
   color: black; }
@@ -315,13 +302,11 @@ Navigational and Header Settings
   /*******Settings for header information of the page**********/
   .header-info {
     padding-top: 40px; }
-
-  .header-info p {
-    font-size: 1.1em;
-    font-family: 'Nunito', sans-serif; }
-
-  .header-info img {
-    width: 85%; }
+    .header-info p {
+      font-size: 1.1em;
+      font-family: 'Nunito', sans-serif; }
+    .header-info img {
+      width: 85%; }
 
   /*Settings for Portfolio section of the page */
   .figures {
