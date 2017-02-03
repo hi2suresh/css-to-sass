@@ -1,0 +1,82 @@
+/*============================================
+Variables
+=============================================*/
+//Color variables
+$background-lightgray: lightgray;
+$background-White: white;
+$color-black: black;
+$color-green: green;
+
+
+//Breakpoint variables for media queries
+$breakpoint-tablet : 768px;
+$breakpoint-desktop  : 1024px;
+
+/*============================================
+Place holders / Extends
+=============================================*/
+//Maximum width
+%maxwidth {
+	max-width: 1200px;
+}
+
+//Background for Header and Footer
+%backgroundForHeaderAndFooter {
+	background: $background-lightgray;
+}
+
+//Background for portfolio
+%whiteBackground {
+	background: $background-White;
+}
+
+%linkColor{
+	 color: $color-black;   
+}
+
+%decoration {
+	text-decoration: none;
+}
+
+//Navigational links position
+%position {
+	float: right;
+}
+
+%width-fig-img {
+	width: 80%;
+}
+
+@mixin img-width-padding() {	
+        width: 80%;
+        padding: 10px 20px;
+   
+}
+
+/*============================================
+Mixins
+=============================================*/
+
+@mixin navigation-margin() {	
+        background: lightgray;
+        margin: 0 auto 30px auto;   
+}
+
+@mixin desktop-container () {
+	text-align: right;
+    padding-right: 15px;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+@mixin footer-link() {
+	text-decoration: none;
+    color: $color-black;
+    float: right;
+}
+
+@mixin footer-text() {
+	text-align: right;
+    text-transform: uppercase;         
+    padding-left: 20px;
+}

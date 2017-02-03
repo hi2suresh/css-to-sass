@@ -3,13 +3,26 @@ Footer Layout for mobile
 *****************************/
 
 .main-footer-desktop {
+   
      @extend %backgroundForHeaderAndFooter;
      @extend %decoration;
     display: none;   /** Make desktop footer disappear for mobile devices **/
+    @media (min-width:$breakpoint-tablet) {
+          display: block;
+         font-size: 0.7em;
+         a {
+         @include footer-link();
+         }
+    }
 }
 
 #control-footer-background-color {
      @extend %backgroundForHeaderAndFooter;
+     @media (min-width:$breakpoint-tablet) {
+        background: gray;
+        margin-left: 15px;
+        margin-right: 15px;
+     }
 }
 
 .main-footer-mobile {
@@ -18,36 +31,70 @@ Footer Layout for mobile
     padding-top: 25px;
     padding-bottom: 25px;
     border-top: 1px solid darkgray;
+
+    div{
+       width: 50%;
+       float: left;
+    }
+
+     h2 {
+        float: left;    
+        text-align: left;
+        font-size: 0.7em;
+    }
+
+    a{
+        @include footer-link();
+        @extend %decoration;
+        font-size: 0.7em;
+    }
+
+     @media (min-width: $breakpoint-tablet) {     
+      display: none;
+    
+     }
 }
 
-.main-footer-mobile { 
-div{
-   width: 50%;
-   float: left;
-}
 
- h2 {
-    float: left;    
-    text-align: left;
-    font-size: 0.7em;
-}
-
-a{
-    @extend %decoration;
-    font-size: 0.7em;
-}
-
-}
-
-
-.main-footer-mobile a,
-.main-footer-desktop a{
-    text-decoration: none;
-    color: black;
-    float: right;
-}
 
 .footer-navigation{   
     @extend %linkColor; 
     @extend %decoration; 
+
+    @media (min-width:$breakpoint-tablet) {
+    ul {@include footer-text;}
+
+    l {
+        @include footer-text;           
+        }
+    li {
+        display: inline-block;       
+        list-style-type: none;       
+    }    
+    a{@include footer-text;}
+
+    }
+}
+
+@media (min-width: $breakpoint-tablet) {
+
+/**************************** 
+Footer Layout for Tablet 
+*****************************/ 
+    footer {
+        max-width: 1200px;
+    } 
+      .footer-container div {
+        width: 50%;
+        float: left;       
+        padding-top: 15px;
+        padding-bottom: 40px;
+        border-top: 1px solid darkgray;  
+    }
+    
+    .footer-heading h2{
+        text-align: left;
+    }
+
+
 }

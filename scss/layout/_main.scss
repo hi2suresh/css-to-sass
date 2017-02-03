@@ -1,3 +1,21 @@
+    
+
+
+/*
+  ========================================
+  Settings for Tablet
+  ========================================
+*/
+
+@media (min-width: $breakpoint-tablet) {        
+        main {
+            max-width: 1200px;
+        }
+        .navigation {
+         li {@include navigation-margin();}
+         a {@include navigation-margin();}
+        }
+        }
 
     /**************************** 
     Portfolio Layout for Mobile 
@@ -11,24 +29,45 @@
         h2 {
         padding-bottom: 20px;
         }
+
+        @media (min-width:$breakpoint-tablet) {
+             width: 90%;
+            margin: 0 auto 20px auto;
+        }
     }
 
-
-
-    .figures img,
-    .figures p {
-        width: 80%;
-        padding: 10px 20px;
-    }
 
     .figures {
-    p {
-        margin: auto auto 20px auto;
-    }
+        p {  
+            @include img-width-padding();         
+            margin: auto auto 20px auto;
+        }
 
-     figcaption {
-        font-weight: bold;
-    }
+        img {
+             @include img-width-padding(); 
+        }
+
+         figcaption {
+            font-weight: bold;
+        }
+
+        @media (min-width:$breakpoint-tablet) {
+            margin: 10px auto;
+            width: 50%;
+            float: left;
+            p {
+            width: 100%;
+            padding: 0;
+            width: 80%;
+            }
+            img {
+              width: 100%;
+            }
+        }
+
+        @media (min-width: $breakpoint-desktop) {
+            width: 33%;
+        }  
     }
 
     /**************************** 
@@ -45,14 +84,26 @@
 
         p { 
         padding: 15px;
+        &::nth-child(4) { 
+        padding: 15px 15px 40px 15px;
+        }
         }
 
+        @media (min-width: $breakpoint-tablet) {
+            p {
+            margin: 20px auto;
+            padding-top: 0;
+            padding-bottom: 0;
+            padding-left: 20%;
+            padding-right: 20%;
+            text-align: center;
+            }
+        }  
+
     }
 
 
-    #contact p:nth-child(4) { 
-        padding: 15px 15px 40px 15px;
-    }
+    
 
 
     /**************************** 
@@ -62,7 +113,7 @@
      margin: 20px auto;
         li {
             margin: 20px auto;
-            color: green;   
+            color: $color-green;   
              list-style: none; 
 
             &:hover {
