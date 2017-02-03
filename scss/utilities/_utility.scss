@@ -16,10 +16,7 @@ $breakpoint-desktop  : 1024px;
 /*============================================
 Place holders / Extends
 =============================================*/
-//Maximum width
-%maxwidth {
-	max-width: 1200px;
-}
+
 
 //Background for Header and Footer
 %backgroundForHeaderAndFooter {
@@ -48,11 +45,7 @@ Place holders / Extends
 	width: 80%;
 }
 
-@mixin img-width-padding() {	
-        width: 80%;
-        padding: 10px 20px;
-   
-}
+
 
 /*============================================
 Mixins
@@ -86,4 +79,10 @@ Mixins
 	text-align: right;
     text-transform: uppercase;         
     padding-left: 20px;
+}
+
+@mixin img-width-padding() {	
+        width: 80%;
+        padding: 10px 20px;
+   
 }
