@@ -30,26 +30,25 @@ Navigational and Header Settings
 }
 
 .navigation { 
- ul {
-    list-style-type: none;
-    text-transform: uppercase;
-    text-align: center;
-    width: 80%
-}
+     ul {
+        list-style-type: none;
+        text-transform: uppercase;
+        text-align: center;
+        width: 80%
+    }
 
-li {    
-     @extend %whiteBackground;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-bottom: 5px;
-}
-a { 
-    @extend %linkColor;
-    @extend %decoration;
-    @extend %whiteBackground;
-    font-weight: 500;
-    font-size: 1.5em;
-}
+    li {    
+         @extend %whiteBackground;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-bottom: 5px;
+    }
+    a { 
+        @include header-link(500, 1.5, $color-astronaut-blue);
+        @extend %linkColor;
+        @extend %decoration;
+        @extend %whiteBackground;        
+    }
 
 }
 
@@ -111,24 +110,24 @@ a {
   Settings for Desktop
   ========================================
 */
-@media (min-width: $breakpoint-desktop) {
     
         .container-navigation {
-            width: 50%;
-            float: left;
-            
-            ul {
-                @include desktop-container();
-            }
+            @media (min-width: $breakpoint-desktop) {
+                width: 50%;
+                float: left;
 
-            a {
-                @include desktop-container();
-            }
+                ul {
+                    @include desktop-container();
+                }
 
-            li {
-            display: inline;            
-            padding: 0;
-            }
+                a {
+                    @include desktop-container();
+                }
+
+                li {
+                display: inline;            
+                padding: 0;
+                }
         }         
 
 

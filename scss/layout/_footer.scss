@@ -76,24 +76,30 @@ Footer Layout for mobile
     }
 }
 
-@media (min-width: $breakpoint-tablet) {
+
 
 /**************************** 
 Footer Layout for Tablet 
 *****************************/ 
-    footer {
-        max-width: 1200px;
-    } 
-      .footer-container div {
-        width: 50%;
-        float: left;       
-        padding-top: 15px;
-        padding-bottom: 40px;
-        border-top: 1px solid darkgray;  
+
+      .footer-container {
+
+         div {
+              @media (min-width: $breakpoint-tablet) {
+                width: 50%;
+                float: left;       
+                padding-top: 15px;
+                padding-bottom: 40px;
+                border-top: 1px solid darkgray;  
+                }
+            }
     }
     
-    .footer-heading h2{
-        text-align: left;
+    .footer-heading {
+     h2{
+        @media (min-width: $breakpoint-tablet) {
+            text-align: left;
+        }
     }
 
 

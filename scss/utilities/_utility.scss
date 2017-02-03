@@ -6,7 +6,8 @@ $background-lightgray: lightgray;
 $background-White: white;
 $color-black: black;
 $color-green: green;
-
+$color-tuftbush: #ffe0cc;
+$color-astronaut-blue: #013E62;
 
 //Breakpoint variables for media queries
 $breakpoint-tablet : 768px;
@@ -57,8 +58,14 @@ Place holders / Extends
 Mixins
 =============================================*/
 
+@mixin header-link($fsize, $fweight, $fcolor:$color-black){
+	font-size: $fsize;
+	font-weight: $fweight;    
+    color:$fcolor;
+}
+
 @mixin navigation-margin() {	
-        background: lightgray;
+        background: $background-lightgray;
         margin: 0 auto 30px auto;   
 }
 

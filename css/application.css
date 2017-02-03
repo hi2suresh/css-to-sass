@@ -3,39 +3,6 @@
   Global Imports
   ========================================
 */
-/*
-  ========================================
-  Base imports
-  ========================================
-*/
-/*
-  ========================================
-  Global Layout Settings
-  ========================================
-*/
-* {
-  box-sizing: border-box;
-  margin: 0 auto;
-  padding: 0;
-  text-align: center;
-  font-family: 'Open Sans', sans-serif; }
-
-a:hover {
-  cursor: pointer; }
-
-/**************************** 
-Clear float   
-*****************************/
-.clear-fix {
-  clear: both;
-  display: table;
-  content: ""; }
-
-/*
-  ========================================
-  Layout imports
-  ========================================
-*/
 /*============================================
 Variables
 =============================================*/
@@ -57,6 +24,40 @@ Place holders / Extends
 /*============================================
 Mixins
 =============================================*/
+/*
+  ========================================
+  Base imports
+  ========================================
+*/
+/*
+  ========================================
+  Global Layout Settings
+  ========================================
+*/
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  max-width: 1200px; }
+
+a:hover {
+  cursor: pointer; }
+
+/**************************** 
+Clear float   
+*****************************/
+.clear-fix {
+  clear: both;
+  display: table;
+  content: ""; }
+
+/*
+  ========================================
+  Layout imports
+  ========================================
+*/
 /******************************* 
 Navigational and Header Settings 
 ********************************/
@@ -90,8 +91,9 @@ Navigational and Header Settings
   padding-bottom: 10px;
   margin-bottom: 5px; }
 .navigation a {
-  font-weight: 500;
-  font-size: 1.5em; }
+  font-size: 500;
+  font-weight: 1.5;
+  color: #013E62; }
 
 .header-info img {
   width: 55%;
@@ -144,21 +146,7 @@ Navigational and Header Settings
     .container-navigation li {
       display: inline;
       padding: 0; } }
-/*
-  ========================================
-  Settings for Tablet
-  ========================================
-*/
-@media (min-width: 768px) {
-  main {
-    max-width: 1200px; }
 
-  .navigation li {
-    background: lightgray;
-    margin: 0 auto 30px auto; }
-  .navigation a {
-    background: lightgray;
-    margin: 0 auto 30px auto; } }
 /**************************** 
 Portfolio Layout for Mobile 
 *****************************/
@@ -206,7 +194,7 @@ Contact Layout
     padding-top: 50px; }
   #contact p {
     padding: 15px; }
-    #contact p::nth-child(4) {
+    #contact p:nth-child(4) {
       padding: 15px 15px 40px 15px; }
   @media (min-width: 768px) {
     #contact p {
@@ -228,6 +216,19 @@ Skills Layout
     list-style: none; }
     #skills li:hover {
       font-size: 1.2em; }
+
+/*
+  ========================================
+  Settings for Tablet
+  ========================================
+*/
+@media (min-width: 768px) {
+  .navigation li {
+    background: lightgray;
+    margin: 0 auto 30px auto; }
+  .navigation a {
+    background: lightgray;
+    margin: 0 auto 30px auto; } }
 
 /**************************** 
 Footer Layout for mobile
@@ -288,20 +289,18 @@ Footer Layout for mobile
     text-transform: uppercase;
     padding-left: 20px; } }
 
+/**************************** 
+Footer Layout for Tablet 
+*****************************/
 @media (min-width: 768px) {
-  /**************************** 
-  Footer Layout for Tablet 
-  *****************************/
-  footer {
-    max-width: 1200px; }
-
   .footer-container div {
     width: 50%;
     float: left;
     padding-top: 15px;
     padding-bottom: 40px;
-    border-top: 1px solid darkgray; }
+    border-top: 1px solid darkgray; } }
 
+@media (min-width: 768px) {
   .footer-heading h2 {
     text-align: left; } }
 

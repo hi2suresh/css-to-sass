@@ -1,21 +1,7 @@
     
 
 
-/*
-  ========================================
-  Settings for Tablet
-  ========================================
-*/
 
-@media (min-width: $breakpoint-tablet) {        
-        main {
-            max-width: 1200px;
-        }
-        .navigation {
-         li {@include navigation-margin();}
-         a {@include navigation-margin();}
-        }
-        }
 
     /**************************** 
     Portfolio Layout for Mobile 
@@ -76,7 +62,7 @@
 
     #contact {   
         width: 100%;
-        background: #ffe0cc;
+        background: $color-tuftbush;
 
         h2 { 
         padding-top: 50px;
@@ -84,9 +70,9 @@
 
         p { 
         padding: 15px;
-        &::nth-child(4) { 
-        padding: 15px 15px 40px 15px;
-        }
+            &:nth-child(4) { 
+            padding: 15px 15px 40px 15px;
+            }
         }
 
         @media (min-width: $breakpoint-tablet) {
@@ -122,4 +108,15 @@
         }
     }
 
-
+/*
+  ========================================
+  Settings for Tablet
+  ========================================
+*/
+   
+        .navigation {
+            @media (min-width: $breakpoint-tablet) { 
+             li {@include navigation-margin();}
+             a {@include navigation-margin();}
+            }
+        }
