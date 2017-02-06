@@ -5,7 +5,7 @@
 */
 
 
-* {
+* {    
     box-sizing: border-box;
     margin: 0 auto;
     padding: 0;
@@ -13,7 +13,9 @@
     font-family: 'Open Sans', sans-serif; 
     max-width: 1200px;   
 }
-
+body {
+    @extend %whiteBackground;
+}
 a:hover {
     cursor: pointer;
 }

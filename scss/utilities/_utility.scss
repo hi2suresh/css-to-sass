@@ -36,6 +36,9 @@ Place holders / Extends
 	text-decoration: none;
 }
 
+%float-left {
+	float: left;
+}
 //Navigational links position
 %position {
 	float: right;
@@ -52,7 +55,7 @@ Mixins
 =============================================*/
 
 @mixin header-link($fsize, $fweight, $fcolor:$color-black){
-	font-size: $fsize;
+	font-size: $fsize * 1em;
 	font-weight: $fweight;    
     color:$fcolor;
 }
